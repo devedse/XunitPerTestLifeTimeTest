@@ -2,11 +2,11 @@ using Xunit;
 
 namespace XunitPerTestLifeTimeTest.Tests
 {
-    public class CalculatorTests : IClassFixture<CalcFixture>
+    public class CalculatorTestsClassFixture : IClassFixture<CalcFixture>
     {
         private readonly CalcFixture _calcFixture;
 
-        public CalculatorTests(CalcFixture calcFixture)
+        public CalculatorTestsClassFixture(CalcFixture calcFixture)
         {
             _calcFixture = calcFixture;
         }
