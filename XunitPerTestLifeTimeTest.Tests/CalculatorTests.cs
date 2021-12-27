@@ -44,8 +44,8 @@ namespace XunitPerTestLifeTimeTest.Tests
             var res2 = _calcFixture.Calc2!.Subtract(11, 5);
 
             //Assert
-            Assert.Equal(14, res1);
-            Assert.Equal(16, res2);
+            Assert.Equal(4, res1);
+            Assert.Equal(6, res2);
 
             Assert.Equal(1, _calcFixture.Calc1.OperationsDone);
             Assert.Equal(1, _calcFixture.Calc2.OperationsDone);
